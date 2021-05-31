@@ -122,7 +122,9 @@ const Signup = () => {
                                         onChange={handleInputs}
                                         placeholder="Confirm Your Password"
                                     />
-                                </div>
+                                </div>                   
+                           
+
                                
                                 <div className="form-group form-button">
                                     <input type="submit" name="signup" id="signup" className="form-submit"
