@@ -62,7 +62,7 @@ router.post('/register', async (req, res) => {
              const user = new User({ name, email, phone, work, password, cpassword });
             // yeha pe 
             await user.save();
-            res.status(201).json({ message: "user registered successfuly" });
+            res.status(201).json({ message: "user registered successfully" });
         }
         
   
@@ -93,7 +93,7 @@ router.post('/signin', async (req, res) => {
            
 
         if (!isMatch) {
-            res.status(400).json({ error: "Invalid Credientials " });
+            res.status(400).json({ error: "Invalid Credentials " });
         } else {
              // need to genereate the token and stored cookie after the password match 
             token = await userLogin.generateAuthToken();
